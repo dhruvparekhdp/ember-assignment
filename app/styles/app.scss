@@ -1,0 +1,143 @@
+
+@import "ember-bootstrap/bootstrap";
+@font-face {
+  font-family: "SF Compact Display Regular";
+  src: url("fonts/SF-Compact-Display-Regular.otf");
+}
+@font-face {
+  font-family: "SF Compact Display Bold";
+  src: url("fonts/SF-Compact-Display-Bold.otf");
+  font-weight: bold;
+}
+
+$primaryColor: #ea4105;
+
+body {
+  font-family: SF Compact Display Regular;
+}
+b {
+  font-family: SF Compact Display Bold;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 0.8px solid rgba(0, 0, 0, 0.27);
+}
+.row {
+  margin-left: unset;
+  margin-right: unset;
+}
+.imgbox {
+  height: 100%;
+}
+
+.center-fit {
+  max-height: 500px;
+  margin: auto;
+  margin-top: -4%;
+}
+
+.banner-header {
+  color: $primaryColor;
+  font-size: 50px;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+.banner-sub-header {
+  color: #777372;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0px 48px;
+  color: $primaryColor;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
+  border: 1px solid $primaryColor !important;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.primary-btn:hover {
+  color: $primaryColor;
+    background-color: #e6e6e6c7;
+    border-color: $primaryColor;
+}
+.m-t-1-5 {
+  margin-top: 1.5em;
+}
+
+main {
+  position: relative;
+  height: 800px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+main div.header {
+  color: #5a5a5a;
+  word-break: break-word;
+  font-size: 20px;
+  text-align: center;
+
+}
+main div.container {
+  color: #bdbdbd;
+  width: 55%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+main div.form {
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
+}
+.sign-in {
+  color: #777372;
+}
+
+.form-control {
+  font-size: 30px !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #333333f0 !important;
+  color: #ffffff !important;
+}
+
+.form-control:focus {
+  border-color: #3e3e3e40;
+  box-shadow: 0 0 0 0.2rem #3e3e3e40;
+}
+@media screen and (max-width: 40em) {
+  main {
+    width: 100% !important;
+  }
+  main div.container {
+    width: 100% !important;
+  }
+  .form-control {
+    font-size: 18px !important;
+  }
+}
